@@ -19,10 +19,10 @@ public class App {
         } else {
             System.out.println("You have not told me your name");
         }
-// slide 17
+        // slide 17
         String input = con.readLine("\nWhat is your hobby?");
-        input.trim();
-        if (input.equals("swim"))
+        input=input.trim();
+       /*  if (input.equals("swim"))
         {
             System.out.println("\nYou float");
         }else if (input.equals("cycle")){
@@ -31,6 +31,18 @@ public class App {
             System.out.println("\nYour heart is strong");
         } else {
             System.out.print("\nNothing");
+        } */
+        //slide 18
+        switch (input.toLowerCase())
+        {
+            case "swim": System.out.println("\nYou float");
+            break;
+            case "jog": System.out.println("\nYour heart is strong");
+            break;
+            case "cycle": System.out.println("\nYou roll");
+            break;
+            default: System.out.print("\nNothing");
         }
+
     }
 }
